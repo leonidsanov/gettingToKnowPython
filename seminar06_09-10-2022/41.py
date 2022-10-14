@@ -18,4 +18,27 @@ for i in range(len(st_list)-1):
         st_list[i-1] = None
         st_list[i+1] = None
 st_list = [el for el in st_list if el != None]
-# доделать
+
+for i in range(len(st_list)-1):
+    if st_list[i] == '/':
+        result = int(st_list[i-1]) / int(st_list[i+1])
+        st_list[i] = result
+        st_list[i-1] = None
+        st_list[i+1] = None
+st_list = [el for el in st_list if el != None]
+
+for i in range(len(st_list)-1):
+    if st_list[i] == '+':
+        result = int(st_list[i-1]) + int(st_list[i+1])
+        st_list[i] = result
+        st_list[i-1] = None
+        st_list[i+1] = None
+st_list = [el for el in st_list if el != None]
+
+for i in range(len(st_list)-1):
+    if st_list[i] == '-':
+        result = int(st_list[i-1]) - int(st_list[i+1])
+        st_list[i] = result
+        st_list[i-1] = None
+        st_list[i+1] = None
+st_list = [el for el in st_list if el != None]
