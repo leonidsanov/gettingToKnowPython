@@ -20,7 +20,6 @@ def create_mn(k):
     lst = [rnd() for i in range(k + 1)]
     return lst
 
-
 # создание многочлена в виде строки
 def create_str(sp):
     lst = sp[::-1]

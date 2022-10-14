@@ -20,7 +20,6 @@ def fillZeroInField(field, n):
             if el[i] == n:
                 el[i] = 'o'
 
-
 print_field(field)
 
 while True:

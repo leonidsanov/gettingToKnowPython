@@ -36,7 +36,6 @@ def create_str(sp):
                 wr += ' = 0'
     return wr
 
-
 k = int(input("Введите натуральную степень k = "))
 koef = create_mn(k)
 write_file(create_str(koef))
