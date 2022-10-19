@@ -16,7 +16,6 @@ out = []
 for e in numbers:
 
     if not e % 2:
-
-    out.append((e, e ** 2))
+        out.append((e, e ** 2))
 
 print(out)
